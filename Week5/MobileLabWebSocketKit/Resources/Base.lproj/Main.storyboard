@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MobileLabWebSocketKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Player Id" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abH-TG-gQi">
+                                <rect key="frame" x="144" y="36" width="254" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ffc-v8-AXa">
+                                <rect key="frame" x="16" y="36" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.2274509804" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="0Iq-R1-d2C"/>
+                                    <constraint firstAttribute="width" constant="120" id="2zT-8b-K1N"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p11-pf-UbQ">
+                                <rect key="frame" x="57" y="201" width="300" height="334"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2qy-ge-FAy"/>
+                                    <constraint firstAttribute="width" secondItem="p11-pf-UbQ" secondAttribute="height" multiplier="1:1" id="kHO-tY-hTt"/>
+                                    <constraint firstAttribute="height" constant="300" id="yBy-7G-f0h"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ffc-v8-AXa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="4Xv-Ho-MKw"/>
+                            <constraint firstItem="p11-pf-UbQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H18-J0-Pmf"/>
+                            <constraint firstItem="p11-pf-UbQ" firstAttribute="top" secondItem="ffc-v8-AXa" secondAttribute="bottom" constant="45" id="HRI-8U-Wxm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="abH-TG-gQi" secondAttribute="trailing" constant="16" id="M53-ab-mei"/>
+                            <constraint firstItem="ffc-v8-AXa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Sp5-gQ-mg5"/>
+                            <constraint firstItem="abH-TG-gQi" firstAttribute="leading" secondItem="ffc-v8-AXa" secondAttribute="trailing" constant="8" id="jOm-kR-Hgk"/>
+                            <constraint firstItem="p11-pf-UbQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l1M-Kk-36I"/>
+                            <constraint firstItem="abH-TG-gQi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="xS2-1y-MQC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ej5-jS-QlW" appends="YES" id="zux-f6-lwK"/>
+                            <outletCollection property="gestureRecognizers" destination="VVs-KJ-l5a" appends="YES" id="GfT-cf-nOA"/>
+                            <outletCollection property="gestureRecognizers" destination="oDT-DK-2x6" appends="YES" id="SMN-dx-QSB"/>
+                            <outletCollection property="gestureRecognizers" destination="6Sf-bs-3j0" appends="YES" id="vpg-5M-Y9A"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="p11-pf-UbQ" id="8S0-cZ-ykX"/>
+                        <outlet property="playerIdTextField" destination="abH-TG-gQi" id="lmJ-G8-azj"/>
+                        <outlet property="profileImageView" destination="ffc-v8-AXa" id="1OS-UY-xGv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="Ej5-jS-QlW">
+                    <connections>
+                        <action selector="SwipeUp:" destination="BYZ-38-t0r" id="t5e-c6-5LG"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="VVs-KJ-l5a">
+                    <connections>
+                        <action selector="SwipeDown:" destination="BYZ-38-t0r" id="CvP-bf-XRd"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="oDT-DK-2x6">
+                    <connections>
+                        <action selector="SwipeRight:" destination="BYZ-38-t0r" id="LiO-12-JR8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="6Sf-bs-3j0">
+                    <connections>
+                        <action selector="SwipeLeft:" destination="BYZ-38-t0r" id="9DK-cp-BPD"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="104.7976011994003"/>
+        </scene>
+    </scenes>
+</document>
