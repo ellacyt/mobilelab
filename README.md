@@ -1,6 +1,21 @@
 # Mobile Lab
-Week 1 - One Button App Kit <br>
-Week 2 - Unlock Screen App Kit <br>
-Week 3 - Unlock screen + One button app <br>
-Week 4 - Animation + Gesture <br>
-Week 5 - Networking 
+##Week 1 
+One Button App Kit
+
+##Week 2 
+Unlock Screen App Kit 
+
+##Week 3 
+Unlock screen + One button app
+
+##Week 4 
+Animation + Gesture
+
+##Week 5 
+Networking 
+
+##Week 6
+Camera Kit 
+
+##Week 8 
+ArKit, SceneKit, 3DKit
