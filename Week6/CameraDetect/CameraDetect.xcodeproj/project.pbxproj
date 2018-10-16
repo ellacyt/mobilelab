@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C850C83205F9ACD008F14D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C850C82205F9ACD008F14D9 /* Default-568h@2x.png */; };
-		0C850C85205F9B24008F14D9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C71B51B41F16D7CF000320B8 /* Info.plist */; };
 		0C850C86205F9B27008F14D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71B51B11F16D7CF000320B8 /* LaunchScreen.storyboard */; };
 		0C850C87205F9B2A008F14D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C71B51AF1F16D7CF000320B8 /* Assets.xcassets */; };
 		0C850C88205F9B2D008F14D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71B51AC1F16D7CF000320B8 /* Main.storyboard */; };
@@ -98,11 +97,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Lets Build That App";
 				TargetAttributes = {
 					C71B51A41F16D7CF000320B8 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -131,7 +131,6 @@
 			files = (
 				0C850C86205F9B27008F14D9 /* LaunchScreen.storyboard in Resources */,
 				0C850C88205F9B2D008F14D9 /* Main.storyboard in Resources */,
-				0C850C85205F9B24008F14D9 /* Info.plist in Resources */,
 				0C850C87205F9B2A008F14D9 /* Assets.xcassets in Resources */,
 				0C850C83205F9ACD008F14D9 /* Default-568h@2x.png in Resources */,
 			);
@@ -186,6 +185,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -193,6 +193,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -243,6 +244,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -250,6 +252,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -289,7 +292,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ellachung.cameradetect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -304,7 +307,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ellachung.cameradetect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

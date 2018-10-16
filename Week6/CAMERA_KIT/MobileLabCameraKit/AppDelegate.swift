@@ -1,5 +1,9 @@
 //
 //  AppDelegate.swift
+//  MobileLabCameraKit
+//
+//  Created by Nien Lam on 2/28/18.
+//  Copyright © 2018 Mobile Lab. All rights reserved.
 //
 
 import UIKit
@@ -12,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+ 
+        application.isStatusBarHidden = true
         return true
     }
 
